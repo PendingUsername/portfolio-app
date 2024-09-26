@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header> 
+      <div class="profile">
+        <!-- Profile picture and name -->
+        <img src="/images/profile.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>JLC</h1>
+        <p>Developer/Cloud Engineering/DevOps/Cybersecurity</p>
+
+        <!-- GitHub logo link -->
+        <a href="https://github.com/PendingUsername" target="_blank" class="github-link">
+          <img src="/images/github.png" alt="GitHub Logo" class="github-logo">
+        </a>
+
+        <!-- Resume download button -->
+        <a href="/resume" class="btn">Download Resume</a>
+      </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-list">
+          <div class="project-card cloud-resume">
+            <h3>Cloud Resume</h3>
+            <a href="https://github.com/PendingUsername/AWS-Cloud-Resume" class="project-link" target="_blank">View on GitHub</a>
+          </div>
+          <div class="project-card finance-app">
+            <h3>Finance App</h3>
+            <a href="https://github.com/PendingUsername/SimpleFinance" class="project-link" target="_blank">View on GitHub</a>
+          </div>
+          <div class="project-card ebs-calc">
+            <h3>Ebs-Calc</h3>
+            <a href="https://github.com/PendingUsername/Ebs-Calc" class="project-link" target="_blank">View on GitHub</a>
+          </div>
+          <div class="project-card microservices">
+            <h3>Microservices</h3>
+            <a href="https://github.com/PendingUsername/Microservices" class="project-link" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </section>
+      
+      
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Bash</li>
+        <li>TypeScript</li>
+        <li>JavaScript</li>
+        <li>Node.js</li>
+        <li>React</li>
+        <li>HTML & CSS</li>
+        <li>AWS</li>
+        <li>Docker</li>
+        <li>Python</li>
+        <li>AI</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+      
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 JLC. All rights reserved. | Built with Node.js & Nginx. | @PendingUsername on Github.</p>
+    </footer>
+  </div>
+</body>
+</html>
