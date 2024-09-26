@@ -74,11 +74,10 @@ Customization
 
 To-Do
 
-Add more projects and update project backgrounds.
-Improve responsiveness on mobile devices.
-Add a blog section to share articles and tutorials.
-
-    Include a light mode toggle option.
+-Add more projects and update project backgrounds.
+-Improve responsiveness on mobile devices.
+-Add a blog section to share articles and tutorials.
+-Better UX/UI
 
 
 
