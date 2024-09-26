@@ -22,7 +22,7 @@ This is a personal portfolio website built with **Node.js** and served using **N
 
     Install Dependencies Make sure you have Node.js installed. Then, install the required Node.js packages:
 
-    bash
+bash
 
 npm install
 
