@@ -50,7 +50,7 @@ nginx
     }
 
 Project Structure
-
+```bash
 portfolio-app/
 ├── public/
 │   ├── images/           # Profile picture, background images, and project images
