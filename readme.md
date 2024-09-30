@@ -52,7 +52,7 @@ nginx
 Project Structure
 
 graphql
-
+```bash
 portfolio-app/
 ├── public/
 │   ├── images/           # Profile picture, background images, and project images
@@ -63,6 +63,8 @@ portfolio-app/
 ├── app.js                # Node.js app entry point
 ├── package.json          # NPM dependencies and scripts
 └── README.md             # Project documentation
+
+bash
 
 Customization
 
