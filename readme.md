@@ -22,7 +22,7 @@ This is a personal portfolio website built with **Node.js** and served using **N
 
     Install Dependencies Make sure you have Node.js installed. Then, install the required Node.js packages:
 
-    bash
+bash
 
 npm install
 
@@ -51,8 +51,6 @@ nginx
 
 Project Structure
 
-graphql
-```bash
 portfolio-app/
 ├── public/
 │   ├── images/           # Profile picture, background images, and project images
@@ -76,11 +74,10 @@ Customization
 
 To-Do
 
-Add more projects and update project backgrounds.
-Improve responsiveness on mobile devices.
-Add a blog section to share articles and tutorials.
-
-    Include a light mode toggle option.
+-Add more projects and update project backgrounds.
+-Improve responsiveness on mobile devices.
+-Add a blog section to share articles and tutorials.
+-Better UX/UI
 
 
 
