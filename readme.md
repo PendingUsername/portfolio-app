@@ -1,91 +1,202 @@
-# Personal Portfolio Website
+# My Portfolio Website
 
-This is a personal portfolio website built with **Node.js** and served using **Nginx**. It features a clean, dark-themed design, showcasing personal projects, skills, and a contact form. The site is fully customizable, and the content can be updated to reflect your latest projects and achievements.
+Welcome to my personal portfolio website! This is a Node.js-based web application with Nginx, showcasing my projects, skills, and contact information. It includes features such as a toggle between **dark mode** and **light mode**, a view counter, and a responsive layout. 
 
 ## Features
 
-- Dark-themed design with a custom background image.
-- Circular profile picture and brief personal bio.
-- Showcase of personal projects with custom backgrounds and hover effects.
-- Clickable GitHub links for each project to view code.
-- Skills section with a neat display of various technologies.
-- Contact form integrated with **Formspree** for receiving messages.
-- Downloadable resume in PDF format.
-- Responsive design that adapts to various screen sizes.
+- **Responsive Design**: Mobile-first approach with a modern and clean design.
+- **Dark Mode / Light Mode Toggle**: Allows users to switch between dark and light themes.
+- **Projects Section**: Displays some of my key projects, with links to their respective GitHub repositories.
+- **Skills Dock**: Highlights various technologies with hover effects and links to the official websites of each technology.
+- **Contact Form**: Enables visitors to send me messages via a form.
+- **View Counter**: Displays how many times the page has been viewed.
+- **Hosted Using Nginx**: The app is deployed behind Nginx for better performance.
 
-## Installation and Setup
+---
 
-1. **Clone the Repository**
+## Table of Contents
+
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Project Structure](#project-structure)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Installation
+
+To set up this project locally, follow these steps:
+
+1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/YourUsername/portfolio-website.git
-   cd portfolio-website
+   git clone https://github.com/yourusername/portfolio-app.git
 
-    Install Dependencies Make sure you have Node.js installed. Then, install the required Node.js packages:
+    Navigate to the Project Directory:
+
+    bash
+
+cd portfolio-app
+
+Install Dependencies: Make sure you have Node.js installed, then run:
 
 bash
 
-npm install
+    npm install
 
-Run the App Locally Start the app using Node.js:
+    Serve Static Assets: Ensure the images are placed correctly in the /public/images folder for profile picture, project images, and skill icons.
+
+Running the Application
+
+Once everything is set up, you can start the server locally by running:
 
 bash
 
-node app.js
+npm start
 
-Serve with Nginx (Optional) You can use Nginx to serve the website. The configuration for Nginx will look something like this:
+By default, the app will run on http://localhost:3000. Open this URL in your browser to view the portfolio.
 
-nginx
+You can change the default port by modifying the following line in app.js:
 
-    server {
-        listen 80;
-        server_name yourdomain.com;
-        
-        location / {
-            proxy_pass http://localhost:3000;
-            proxy_set_header Host $host;
-            proxy_set_header X-Real-IP $remote_addr;
-            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-            proxy_set_header X-Forwarded-Proto $scheme;
-        }
-    }
+javascript
+
+const PORT = process.env.PORT || 3000;
 
 Project Structure
-```bash
+
+Here's an overview of the key files and directories in this project:
+
+graphql
+
 portfolio-app/
-├── public/
-│   ├── images/           # Profile picture, background images, and project images
-│   └── css/
-│       ├── styles.css    # Main styles for the site
+│
+├── public/                # Static assets (CSS, Images)
+│   ├── css/
+│   │   └── styles.css      # Main CSS file for the web app
+│   └── images/             # Profile picture, project images, skill icons
+│
 ├── views/
-│   ├── index.ejs         # Main HTML template for the portfolio
-├── app.js                # Node.js app entry point
-├── package.json          # NPM dependencies and scripts
-└── README.md             # Project documentation
+│   └── index.ejs           # Main HTML template using EJS
+│
+├── app.js                  # Main application server
+├── package.json            # Project dependencies and scripts
+├── package-lock.json       # Auto-generated package lock file
+├── README.md               # Documentation
+└── routes/
+    └── index.js            # Routes for the application
 
-Customization
+GPT
 
-    Profile Picture: Replace the profile.jpg in the public/images folder with your own image.
-    Background Image: Replace the background.jpg file in the public/images folder to change the site’s background.
-    Projects: Update the project cards in index.ejs with your projects, adding links to your GitHub repos.
-    Skills: Add, remove, or update skills in the #skills section in the HTML.
-    Contact Form: The contact form is powered by Formspree. Update the form action with your Formspree URL to start receiving messages.
+Sure! Here's the entire content formatted for Markdown so you can easily copy and paste it into your README.md file:
 
-To-Do
+markdown
 
--Add more projects and update project backgrounds.
--Improve responsiveness on mobile devices.
--Add a blog section to share articles and tutorials.
--Better UX/UI
+# My Portfolio Website
+
+Welcome to my personal portfolio website! This is a Node.js-based web application with Nginx, showcasing my projects, skills, and contact information. It includes features such as a toggle between **dark mode** and **light mode**, a view counter, and a responsive layout. 
+
+## Features
+
+- **Responsive Design**: Mobile-first approach with a modern and clean design.
+- **Dark Mode / Light Mode Toggle**: Allows users to switch between dark and light themes.
+- **Projects Section**: Displays some of my key projects, with links to their respective GitHub repositories.
+- **Skills Dock**: Highlights various technologies with hover effects and links to the official websites of each technology.
+- **Contact Form**: Enables visitors to send me messages via a form.
+- **View Counter**: Displays how many times the page has been viewed.
+- **Hosted Using Nginx**: The app is deployed behind Nginx for better performance.
+
+---
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Project Structure](#project-structure)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Installation
+
+To set up this project locally, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/portfolio-app.git
+
+    Navigate to the Project Directory:
 
 
 
+cd portfolio-app
 
-### Breakdown:
-1. **Features**: Lists the main features of the site.
-2. **Installation and Setup**: Instructions to run the project locally.
-3. **Project Structure**: Gives an overview of the folder structure.
-4. **Customization**: Instructions on how to change profile pictures, background images, projects, and more.
-5. **To-Do**: A section where you can add features you plan to work on in the future.
-6. **License**: Default placeholder for the project’s license.
+Install Dependencies: Make sure you have Node.js installed, then run:
 
-Feel free to modify and extend it as your project evolves! Let me know if you need more 
+bash
+
+    npm install
+
+    Serve Static Assets: Ensure the images are placed correctly in the /public/images folder for profile picture, project images, and skill icons.
+
+Running the Application
+
+Once everything is set up, you can start the server locally by running:
+
+bash
+
+npm start
+
+By default, the app will run on http://localhost:3000. Open this URL in your browser to view the portfolio.
+
+You can change the default port by modifying the following line in app.js:
+
+javascript
+
+const PORT = process.env.PORT || 3000;
+
+Project Structure
+
+Here's an overview of the key files and directories in this project:
+
+portfolio-app/
+│
+├── public/                # Static assets (CSS, Images)
+│   ├── css/
+│   │   └── styles.css      # Main CSS file for the web app
+│   └── images/             # Profile picture, project images, skill icons
+│
+├── views/
+│   └── index.ejs           # Main HTML template using EJS
+│
+├── app.js                  # Main application server
+├── package.json            # Project dependencies and scripts
+├── package-lock.json       # Auto-generated package lock file
+├── README.md               # Documentation
+└── routes/
+    └── index.js            # Routes for the application
+
+Screenshots
+Dark Mode
+
+Light Mode
+
+Technologies Used
+
+The following technologies are used in this project:
+
+    Node.js: Backend runtime for serving the app.
+    Express.js: Web framework for Node.js.
+    EJS: Templating engine for rendering HTML.
+    CSS Flexbox & Grid: For responsive design and layout.
+    Nginx: Reverse proxy and load balancer.
+    Formspree: Handles the contact form submissions.
+    LocalStorage: Used for dark/light mode persistence.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 
