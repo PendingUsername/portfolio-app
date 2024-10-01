@@ -62,8 +62,6 @@ portfolio-app/
 ├── package.json          # NPM dependencies and scripts
 └── README.md             # Project documentation
 
-bash
-
 Customization
 
     Profile Picture: Replace the profile.jpg in the public/images folder with your own image.
