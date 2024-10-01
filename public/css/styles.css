@@ -78,7 +78,7 @@ h1 {
   width: 35%;  /* Reduce the width of the project card to 35% */
   max-width: 250px;  /* Ensure they don’t exceed 250px width */
   text-align: center;
-  color: white;
+  color: rgb(255, 166, 0);
 }
 
 /* Specific backgrounds for each project */
@@ -99,7 +99,7 @@ h1 {
 }
 
 .project-link {
-  color: #f2f2f2;
+  color: #ffca0a;
   text-decoration: none;
 }
 
@@ -111,21 +111,23 @@ h1 {
   padding: 40px 0;
 }
 
-#skills ul {
-  list-style-type: none;
-  padding: 0;
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between skill icons */
 }
 
-#skills li {
-  display: block;
-  margin: 10px 0;
-  padding: 10px 15px;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 5px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+.skill-icon {
+  width: 60px;    /* Set uniform width */
+  height: 60px;   /* Set uniform height */
+  transition: transform 0.3s ease;
 }
+
+.skill-icon:hover {
+  transform: scale(1.1);  /* Slight zoom on hover */
+}
+
 
 #contact {
   padding: 40px 0;
@@ -160,7 +162,7 @@ h1 {
 }
 
 #contact button:hover {
-  background-color: #0056b3;
+  background-color: #ffffff;
 }
 
 footer {
