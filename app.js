@@ -1,20 +1,24 @@
-// app.js
 const express = require('express');
 const path = require('path');
 const app = express();
 
-// Set EJS as template engine
+// Set up EJS as the view engine
 app.set('view engine', 'ejs');
 
-// Static files (CSS, images, etc.)
+// Serve static files from the "public" folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Routes
-const indexRouter = require('./routes/index');
-app.use('/', indexRouter);
+// Initialize view counter
+let viewCounter = 0;
+
+// Increment the view counter on each page load
+app.get('/', (req, res) => {
+  viewCounter++;
+  res.render('index', { views: viewCounter });  // Pass 'views' to EJS
+});
 
 // Start the server
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Portfolio app running at http://localhost:${port}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });

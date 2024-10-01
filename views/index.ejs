@@ -9,12 +9,22 @@
 <body>
   <div class="container">
     <!-- Header Section -->
-    <header> 
+    <header>
       <div class="profile">
-        <!-- Profile picture and name -->
+        <!-- Profile picture -->
         <img src="/images/profile.jpg" alt="Profile Picture" class="profile-pic">
-        <h1>JLC</h1>
-        <p>{Developer/Cloud Engineering/DevOps/Cybersecurity}</p>
+
+        <!-- JLC Header with toggle button and on/off indicator -->
+        <div class="header-with-toggle">
+          <h1>JLC</h1>
+          <div class="toggle-container">
+            <label class="toggle-switch">
+              <input type="checkbox" id="theme-toggle">
+              <span class="slider"></span>
+            </label>
+            <span class="on-off-text">Dark</span> <!-- Default to "Dark" mode text -->
+          </div>
+        </div>
 
         <!-- GitHub logo link -->
         <a href="https://github.com/PendingUsername" target="_blank" class="github-link">
@@ -26,126 +36,151 @@
       </div>
     </header>
 
-<!-- Projects Section -->
-<section id="projects">
-  <h2>My Projects</h2>
-  <div class="project-list">
-    <div class="project-card">
-      <a href="https://github.com/PendingUsername/AWS-Cloud-Resume" target="_blank">
-        <div class="project-wrapper">
-          <img src="/images/CloudResume.png" alt="Cloud Resume" class="project-image">
-          <h3 class="project-title">Cloud Resume</h3>
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <a href="https://github.com/PendingUsername/AWS-Cloud-Resume" target="_blank">
+            <div class="project-wrapper">
+              <img src="/images/CloudResume.png" alt="Cloud Resume" class="project-image">
+              <h3 class="project-title">Cloud Resume</h3>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
-    <div class="project-card">
-      <a href="https://github.com/PendingUsername/SimpleFinance" target="_blank">
-        <div class="project-wrapper">
-          <img src="/images/SimpleFinance.png" alt="Finance App" class="project-image">
-          <h3 class="project-title">Finance App</h3>
+        <div class="project-card">
+          <a href="https://github.com/PendingUsername/SimpleFinance" target="_blank">
+            <div class="project-wrapper">
+              <img src="/images/SimpleFinance.png" alt="Finance App" class="project-image">
+              <h3 class="project-title">Finance App</h3>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
-    <div class="project-card">
-      <a href="https://github.com/PendingUsername/Ebs-Calc" target="_blank">
-        <div class="project-wrapper">
-          <img src="/images/ebs-calc.png" alt="Ebs-Calc" class="project-image">
-          <h3 class="project-title">Ebs-Calc</h3>
+        <div class="project-card">
+          <a href="https://github.com/PendingUsername/Ebs-Calc" target="_blank">
+            <div class="project-wrapper">
+              <img src="/images/ebs-calc.png" alt="Ebs-Calc" class="project-image">
+              <h3 class="project-title">Ebs-Calc</h3>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
-    <div class="project-card">
-      <a href="https://github.com/PendingUsername/Microservices" target="_blank">
-        <div class="project-wrapper">
-          <img src="/images/microservices.png" alt="Microservices" class="project-image">
-          <h3 class="project-title">Microservices</h3>
+        <div class="project-card">
+          <a href="https://github.com/PendingUsername/Microservices" target="_blank">
+            <div class="project-wrapper">
+              <img src="/images/microservices.png" alt="Microservices" class="project-image">
+              <h3 class="project-title">Microservices</h3>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
-  </div>
-</section>
+      </div>
+    </section>
 
-<!-- Skills Section -->
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills-dock">
-    <div class="skills-list">
-      <!-- Front-End Technologies -->
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
-        <img src="/images/htmlcss.png" alt="HTML & CSS" class="skill-icon">
-      </a>
-      <a href="https://www.javascript.com/" target="_blank">
-        <img src="/images/javascript.png" alt="JavaScript" class="skill-icon">
-      </a>
-      <a href="https://www.typescriptlang.org/" target="_blank">
-        <img src="/images/typescript.png" alt="TypeScript" class="skill-icon">
-      </a>
-      <a href="https://vuejs.org/" target="_blank">
-        <img src="/images/vuejs.png" alt="Vue.js" class="skill-icon">
-      </a>
-      <a href="https://reactjs.org/" target="_blank">
-        <img src="/images/react.png" alt="React" class="skill-icon">
-      </a>
-      <a href="https://angular.dev/" target="_blank">
-        <img src="/images/angular.png" alt="Angular" class="skill-icon">
-      </a>
-      
-      <!-- Back-End / Full-Stack -->
-      <a href="https://nodejs.org/" target="_blank">
-        <img src="/images/nodejs.png" alt="Node.js" class="skill-icon">
-      </a>
-      <a href="https://www.python.org/" target="_blank">
-        <img src="/images/python.png" alt="Python" class="skill-icon">
-      </a>
-      <a href="https://spring.io/" target="_blank">
-        <img src="/images/spring.png" alt="Spring" class="skill-icon">
-      </a>
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-dock">
+        <div class="skills-list">
+          <!-- Front-End Technologies -->
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+            <img src="/images/htmlcss.png" alt="HTML & CSS" class="skill-icon">
+          </a>
+          <a href="https://www.javascript.com/" target="_blank">
+            <img src="/images/javascript.png" alt="JavaScript" class="skill-icon">
+          </a>
+          <a href="https://www.typescriptlang.org/" target="_blank">
+            <img src="/images/typescript.png" alt="TypeScript" class="skill-icon">
+          </a>
+          <a href="https://vuejs.org/" target="_blank">
+            <img src="/images/vuejs.png" alt="Vue.js" class="skill-icon">
+          </a>
+          <a href="https://reactjs.org/" target="_blank">
+            <img src="/images/react.png" alt="React" class="skill-icon">
+          </a>
+          <a href="https://angular.dev/" target="_blank">
+            <img src="/images/angular.png" alt="Angular" class="skill-icon">
+          </a>
 
-      <!-- Databases -->
-      <a href="https://www.mysql.com/" target="_blank">
-        <img src="/images/mysql.png" alt="MySQL" class="skill-icon">
-      </a>
-      
-      <!-- DevOps / Cloud -->
-      <a href="https://www.docker.com/" target="_blank">
-        <img src="/images/docker.png" alt="Docker" class="skill-icon">
-      </a>
-      <a href="https://aws.amazon.com/" target="_blank">
-        <img src="/images/aws.png" alt="AWS" class="skill-icon">
-      </a>
+          <!-- Back-End / Full-Stack -->
+          <a href="https://nodejs.org/" target="_blank">
+            <img src="/images/nodejs.png" alt="Node.js" class="skill-icon">
+          </a>
+          <a href="https://www.python.org/" target="_blank">
+            <img src="/images/python.png" alt="Python" class="skill-icon">
+          </a>
+          <a href="https://spring.io/" target="_blank">
+            <img src="/images/spring.png" alt="Spring" class="skill-icon">
+          </a>
 
-      <!-- Scripting / Automation -->
-      <a href="https://www.gnu.org/software/bash/" target="_blank">
-        <img src="/images/bash.png" alt="Bash" class="skill-icon">
-      </a>
-      <a href="https://github.com/" target="_blank">
-        <img src="/images/github.png" alt="Github" class="skill-icon">
-      </a>
+          <!-- Databases -->
+          <a href="https://www.mysql.com/" target="_blank">
+            <img src="/images/mysql.png" alt="MySQL" class="skill-icon">
+          </a>
 
-      <!-- Emerging Technologies -->
-      <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank">
-        <img src="/images/ai.png" alt="AI" class="skill-icon">
-      </a>
-    </div>
-  </div>
-</section>
+          <!-- DevOps / Cloud -->
+          <a href="https://www.docker.com/" target="_blank">
+            <img src="/images/docker.png" alt="Docker" class="skill-icon">
+          </a>
+          <a href="https://aws.amazon.com/" target="_blank">
+            <img src="/images/aws.png" alt="AWS" class="skill-icon">
+          </a>
 
+          <!-- Scripting / Automation -->
+          <a href="https://www.gnu.org/software/bash/" target="_blank">
+            <img src="/images/bash.png" alt="Bash" class="skill-icon">
+          </a>
+          <a href="https://github.com/" target="_blank">
+            <img src="/images/github.png" alt="Github" class="skill-icon">
+          </a>
+
+          <!-- Emerging Technologies -->
+          <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank">
+            <img src="/images/ai.png" alt="AI" class="skill-icon">
+          </a>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </section>
-      
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
     <!-- Footer -->
     <footer>
       <p>&copy; 2024 JLC. All rights reserved. | Built with Node.js & Nginx. | @PendingUsername on Github.</p>
+      <p>Page Views: <%= views %></p> <!-- View counter -->
     </footer>
   </div>
+
+  <!-- JavaScript for Dark/Light Mode Toggle -->
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'dark';
+    const onOffText = document.querySelector('.on-off-text');
+
+    // Apply the saved theme on page load
+    if (currentTheme === 'light') {
+      document.body.classList.add('light-mode');
+      themeToggle.checked = true;
+      onOffText.textContent = 'Light';
+    } else {
+      onOffText.textContent = 'Dark';
+    }
+
+    // Toggle theme on slider change
+    themeToggle.addEventListener('change', () => {
+      document.body.classList.toggle('light-mode');
+      const theme = document.body.classList.contains('light-mode') ? 'light' : 'dark';
+      localStorage.setItem('theme', theme);
+
+      // Update the on/off text
+      onOffText.textContent = theme.charAt(0).toUpperCase() + theme.slice(1);
+    });
+  </script>
 </body>
 </html>
