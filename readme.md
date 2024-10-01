@@ -93,16 +93,6 @@ portfolio-app/
 
 ---
 
-## Screenshots
-
-### Dark Mode
-![Dark Mode Screenshot](path_to_your_screenshot)
-
-### Light Mode
-![Light Mode Screenshot](path_to_your_screenshot)
-
----
-
 ## Technologies Used
 
 The following technologies are used in this project:
